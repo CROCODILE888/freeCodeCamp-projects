@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #EBE7E7;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+  background: #E0DDDD;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+}
+
+#gallery img {
+  width: 25%;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 8px;
+  padding: 0 4px;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  #gallery img {
+    width: 50%;
+  }
+}
+h1{
+  color:brown;
+}
+
+@media(max-width: 600px){
+  #gallery img{
+    width: 100%
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1><i>Let's look at some cute Pets!</h1>
+    </div>
+    <div id="gallery">
+      <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/News/general-health/2385-dog_sleeping-1296x728-header.jpg?w=1155&h=1528"/>
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg"/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDEf2x48OO7avhX3sDnPcxx-2UelTwMABUWg&usqp=CAU"/>
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg"/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNuj8w6b3GzuKsW0ChHxkDLRP9kap3F3fMKw&usqp=CAU"/>
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg"/>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyhQied4GT98XTvYvb4i5SR5P7_KpDN6iWDA&usqp=CAU"/>
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg"/>
+      
+    </div>
+  </body>
+</html>
